@@ -1,0 +1,220 @@
+.navbar
+	background: $header
+	padding: 17px 0
+	position: fixed
+	min-width: 100%
+	z-index: 999
+
+
+
+.navbar.is-opened
+	background: #222
+	box-shadow: none
+
+.navbar__row
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.navbar__logo
+	display: flex
+	align-items: center
+	text-align: left
+
+.navbar__logo--xs
+	display: none
+
+.phone-number-xs
+	display: none
+
+.phone-number-xs.opened
+	display: block
+	padding: 5px 20px
+	background: #222
+	box-shadow: -2px 2px 7px 2px rgba(0, 0, 0, .4)
+	position: absolute
+	position: fixed
+	z-index: 998
+	top: 5%
+	right: 0
+	transition: all .2s ease-in-out
+
+	.phone__text
+		margin: 0
+		a
+			color: $main
+			transition: all 0.2s ease
+			&:hover, &:focus
+				text-decoration: none
+				color: #579eff
+.navbar__time
+	text-align: center
+	margin-left: 100px
+
+	.time__text
+		margin: 0
+		color: $main
+		font-size: 12px
+		font-family: $proxima-nova
+		font-weight: 900
+		span
+			font-weight: 300
+
+.navbar__right
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+
+//************ТЕЛЕФОННЫЙ НОМЕР**************//
+
+
+.phone-xs
+	display: none
+
+	.phone-xs__img
+		width: 55px
+
+.phone__text
+	margin: 0
+	font-family: $proxima-nova
+	font-size: 16px
+	color: $main
+
+
+//************КНОПКА ЗВОНОК**************//
+
+.button__call
+	margin: 0 15px
+	background: $btn1
+	border: none
+	font-family: $proxima-nova
+	text-transform: uppercase
+	color: $main
+	font-size: 12px
+	font-weight: 700
+	padding: 12px 26px
+	border: solid 3px $btn1
+	transition: all .3s ease
+	&:hover
+		background-color: $main
+		color:  $btn1
+		font-weight: 900
+		transition: all .3s ease
+	&:focus
+		outline: none
+
+
+
+
+
+//************МЕДИАЗАПРОСЫ**************//
+
+//************ЭКРАН 1024px**************//
+
+@media (max-width: 1024px) 
+
+	.navbar__time
+		margin-left: 50px
+	
+	.phone__text
+		font-size: 16px	
+
+	.button__call
+		font-size: 12px
+		padding: 12px 20px
+
+
+
+//************ЭКРАН 992px**************//
+
+@media (max-width: 992px) 
+	.navbar__time
+		padding: 0
+		.time__text
+			font-size: 10px
+
+	.phone__text
+		font-size: 16px	
+
+	.button__call
+		font-size: 10px
+		padding: 13px 15px
+
+
+//************ЭКРАН 768px**************//
+
+@media (max-width: 768px)
+	
+	.logo__img
+		width: 170px
+
+	.navbar__right
+		margin-left: auto
+
+	.phone__text
+		font-size: 12px	
+		font-weight: 900
+	
+	.navbar__time
+		display: none
+
+	.button__call
+		font-size: 10px
+		padding: 8px 10px
+		border: solid 1px $btn1
+
+
+//************ЭКРАН 520px**************//
+
+
+@media (max-width: 550px)
+	
+	.logo__img
+		width: 150px
+
+	.navbar
+		padding: 10px 0
+
+	.navbar__button
+		display: none
+
+	.phone__text
+		font-size: 10px
+		margin-right: 10px
+
+
+
+@media(max-width: 480px)
+
+	.phone__text
+		font-size: 10px
+
+//************ЭКРАН 440px**************//
+
+@media (max-width: 400px)
+	
+	.navbar
+		padding: 7px 0
+	
+	.logo__img
+		width: 110px
+
+	.phone__text
+		font-size: 10px
+
+
+
+@media(max-width: 350px)
+	
+
+	
+	.phone-xs
+		display: block
+		
+		.phone-xs__img
+			width: 17px
+			cursor: pointer
+		 
+	.phone
+		display: none

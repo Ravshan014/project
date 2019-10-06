@@ -1,0 +1,143 @@
+.slider
+	background: $thirdBg
+	padding: 80px 0
+
+.slider-first
+	margin-bottom: 100px
+	color: $main
+	text-align: center
+
+	&__title
+		font-size: 30px
+		font-weight: 900
+		margin-bottom: 30px
+
+	&__text
+		margin: 0 auto
+		font-size: 18px
+		
+.slider-sliders
+	padding: 0 20px
+
+.slider-slider
+	display: flex
+	justify-content: space-between
+	&__img
+		margin: 0 auto
+		width: 290px
+		height: 211px
+
+.fotorama
+	display: none
+
+	&__img
+		margin: 0 auto
+		width: 290px
+
+.fotorama__thumb-border
+	border: none
+
+@media(max-width: 1200px)
+
+	.slider-slider__img
+		width: 260px
+
+
+
+@media(max-width: 992px)
+
+	.slider-first
+		margin-bottom: 80px
+		color: $main
+		text-align: center
+
+		&__title
+			font-size: 30px
+			margin-bottom: 30px
+
+		&__text
+			font-size: 16px
+
+	.slider-sliders
+		padding: 0 10px
+
+	.slider-slider__img
+		margin: 0 auto
+		width: 235px
+		height: 195px
+
+
+
+@media(max-width: 768px)
+
+	.slider
+		padding: 40px 0
+
+	.slider-first	
+		margin-bottom: 40px
+
+		&__title
+			font-size: 24px
+			margin-bottom: 15px
+
+		&__text
+			max-width: 400px
+			font-size: 14px		
+
+	.slider-slider__img
+		border: solid 10px $thirdBg
+		width: 215px
+		height: 190px
+
+	.slick-next
+	    right: -15px
+
+	.slick-prev
+		z-index: 555
+		left: -12px
+
+@media(max-width: 576px)
+
+	.slider
+		padding: 40px 0
+
+	.slider-first	
+		margin-bottom: 20px
+
+		&__title
+			font-size: 20px
+			margin-bottom: 15px
+
+		&__text
+			max-width: 300px
+			font-size: 12px
+			font-weight: 500
+
+	.slider-sliders
+		display: none
+
+	.fotorama
+		display: flex
+		justify-content: center
+		padding: 0 10px
+
+
+@media(max-width: 400px)
+	
+	.slider
+		padding: 20px 0 40px 0
+
+	.slider-first	
+		margin-bottom: 20px
+
+		&__title
+			font-size: 18px
+			margin-bottom: 15px
+
+		&__text
+			max-width: 300px
+			font-size: 12px
+			font-weight: 300
+
+	.fotorama
+		padding: 0 20px
